@@ -6,4 +6,5 @@ Planned features
 - Tracking weight -> Graph
 - Ads -> Ads
 - Facebook/Twiiter login -> Auth
+- Share status -> Thrid party socail media API
 - Vacinces and other scheduled events like meds -> Calendar Events and/or push notifactions
