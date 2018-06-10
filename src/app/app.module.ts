@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { DgDashboardComponent } from './dg-dashboard/dg-dashboard.component';
 import { DgAddDogComponent } from './forms/dg-add-dog/dg-add-dog.component';
 
+import { AppRoutingModule } from './/app-routing.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,8 @@ import { DgAddDogComponent } from './forms/dg-add-dog/dg-add-dog.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

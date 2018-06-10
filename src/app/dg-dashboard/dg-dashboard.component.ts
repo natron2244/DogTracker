@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DgDog } from '../models/dg-dog';
+import { DgUser } from '../models/dg-user';
 
 @Component({
   selector: 'dg-dashboard',
@@ -8,9 +9,10 @@ import { DgDog } from '../models/dg-dog';
 })
 export class DgDashboardComponent implements OnInit {
   dogs : DgDog[];
+  user = new DgUser(1, 'Natron2244', 'Nathan', 'Christensen');
 
   constructor() { 
-    
+
   }
 
   ngOnInit() {
