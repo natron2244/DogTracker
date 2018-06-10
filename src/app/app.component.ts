@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  user = { name : "Nathan" };
-  appData = {
-      isCool : false
-  };
 }
