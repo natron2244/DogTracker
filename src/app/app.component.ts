@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DgUser } from './models/dg-user'
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  user = { name : "Nathan" };
-  appData = {
-      isCool : false
-  };
+  user = new DgUser(1, 'Natron2244', 'Nathan', 'Christensen');
 }

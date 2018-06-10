@@ -1,10 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { DgDashboardComponent } from './dg-dashboard/dg-dashboard.component';
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        DgDashboardComponent
       ],
     }).compileComponents();
   }));
@@ -16,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as users name`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.user.name).toEqual('Nathan');
+    expect(app.user.firstName).toEqual('Nathan');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
