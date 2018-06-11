@@ -25,7 +25,7 @@ describe('DgDashboardComponent', () => {
   });
 
   it('should have dogs info', () => {
-    let dog : DgDog = component.dogs[0];
+    const dog: DgDog = component.dogs[0];
 
     expect(dog.name).toEqual('Flint');
   });

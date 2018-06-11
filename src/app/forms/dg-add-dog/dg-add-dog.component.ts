@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'dg-add-dog',
+  selector: 'app-dg-add-dog',
   templateUrl: './dg-add-dog.component.html',
   styleUrls: ['./dg-add-dog.component.less']
 })

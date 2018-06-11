@@ -3,20 +3,20 @@ import { DgDog } from '../models/dg-dog';
 import { DgUser } from '../models/dg-user';
 
 @Component({
-  selector: 'dg-dashboard',
+  selector: 'app-dg-dashboard',
   templateUrl: './dg-dashboard.component.html',
   styleUrls: ['./dg-dashboard.component.less']
 })
 export class DgDashboardComponent implements OnInit {
-  dogs : DgDog[];
+  dogs: DgDog[];
   user = new DgUser(1, 'Natron2244', 'Nathan', 'Christensen');
 
-  constructor() { 
+  constructor() {
 
   }
 
   ngOnInit() {
-    let dog = new DgDog('Flint', 150, 5);
+    const dog = new DgDog('Flint', 150, 5);
     this.dogs = [dog];
   }
 
