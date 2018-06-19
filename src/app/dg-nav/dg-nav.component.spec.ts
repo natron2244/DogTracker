@@ -1,6 +1,6 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-// TODO: Actaully test the routes
+// TODO: See Github issue #4, should actaully test the routing works
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { DgNavComponent } from './dg-nav.component';
