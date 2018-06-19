@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-dg-nav',
   templateUrl: './dg-nav.component.html',
-  styleUrls: ['./dg-nav.component.css']
+  styleUrls: ['./dg-nav.component.less']
 })
 export class DgNavComponent {
 
