@@ -1,3 +1,5 @@
+![152px](https://user-images.githubusercontent.com/38810169/41735646-08ab0356-75ac-11e8-987e-5e787a693f64.png)
+
 # web-dog-tracker
 
 Planned features
