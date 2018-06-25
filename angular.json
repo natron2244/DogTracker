@@ -5,7 +5,7 @@
   "projects": {
     "dog-tracker": {
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "cleint/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -17,17 +17,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/dog-tracker",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "outputPath": "dist/dog-tracker/client",
+            "index": "cleint/src/index.html",
+            "main": "cleint/src/main.ts",
+            "polyfills": "cleint/src/polyfills.ts",
+            "tsConfig": "cleint/src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "cleint/src/favicon.ico",
+              "cleint/src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "cleint/src/styles.less"
             ],
             "scripts": []
           },
@@ -35,8 +35,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "cleint/src/environments/environment.ts",
+                  "with": "cleint/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -71,17 +71,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
+            "main": "cleint/src/test.ts",
+            "polyfills": "cleint/src/polyfills.ts",
+            "tsConfig": "cleint/src/tsconfig.spec.json",
+            "karmaConfig": "cleint/src/karma.conf.js",
             "styles": [
-              "src/styles.less"
+              "cleint/src/styles.less"
             ],
             "scripts": [],
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "cleint/src/favicon.ico",
+              "cleint/src/assets"
             ]
           }
         },
@@ -89,8 +89,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "cleint/src/tsconfig.app.json",
+              "cleint/src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
