@@ -1,6 +1,12 @@
 {
-  "name": "angular-playground",
+  "name": "dog-tracker",
   "version": "0.0.0",
+  "description": "A application to help track your furry friends health.",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natron2244/DogTracker"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

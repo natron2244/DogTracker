@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-playground": {
+    "dog-tracker": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-playground",
+            "outputPath": "dist/dog-tracker",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -54,18 +54,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-playground:build"
+            "browserTarget": "dog-tracker:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-playground:build:production"
+              "browserTarget": "dog-tracker:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-playground:build"
+            "browserTarget": "dog-tracker:build"
           }
         },
         "test": {
@@ -99,7 +99,7 @@
         }
       }
     },
-    "angular-playground-e2e": {
+    "dog-tracker-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -107,7 +107,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-playground:serve"
+            "devServerTarget": "dog-tracker:serve"
           }
         },
         "lint": {
@@ -122,5 +122,5 @@
       }
     }
   },
-  "defaultProject": "angular-playground"
+  "defaultProject": "dog-tracker"
 }
