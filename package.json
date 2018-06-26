@@ -1,13 +1,22 @@
 {
-  "name": "angular-playground",
+  "name": "dog-tracker",
   "version": "0.0.0",
+  "description": "A application to help track your furry friends health.",
+  "license": "BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/natron2244/DogTracker"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "server-build": "tsc -p /source/dog-tracker/server/tsconfig.server.json",
+    "server-start": "node ./dist/server/server.js",
+    "server-run": "npm run server-build && npm run server-start"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +31,9 @@
     "@angular/platform-browser": "^6.0.2",
     "@angular/platform-browser-dynamic": "^6.0.2",
     "@angular/router": "^6.0.2",
+    "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
+    "express": "^4.16.3",
     "hammerjs": "^2.0.8",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
