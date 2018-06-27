@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { DgUser } from './models/dg-user';
+import { DgUser } from '../models/dg-user';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

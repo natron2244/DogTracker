@@ -1,7 +1,8 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { DgDog } from '../models/dg-dog';
 import { DgUser } from '../models/dg-user';
-import { DgUserService } from '../dg-user.service';
+import { DgUserService } from '../api-services/dg-user.service';
+import { DgDogService } from '../api-services/dg-dog.service';
 
 @Injectable()
 @Component({
@@ -11,16 +12,17 @@ import { DgUserService } from '../dg-user.service';
 })
 export class DgDashboardComponent implements OnInit {
   dogs: DgDog[];
-  user = new DgUser(1, 'mbiggs', 'Mike', 'Biggs');
+  user: DgUser;
 
-  constructor(private userService: DgUserService) {
+  constructor(private userService: DgUserService, private dogService: DgDogService) {
 
   }
 
   ngOnInit() {
-    const dog = new DgDog('Flint', 150, 5);
-    this.dogs = [dog];
-    this.userService.getUser().subscribe((user: DgUser) => {
+    this.dogService.getDogs().subscribe(dogs => {
+      this.dogs = dogs;
+    });
+    this.userService.getUser().subscribe(user => {
       this.user = user;
     });
   }
